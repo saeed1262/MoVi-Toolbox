@@ -18,7 +18,7 @@ Here we provide tools and tutorials to use MoVi in your research projects. More 
 - Python 3.*
 - MATLAB v>2017
 
-In case you are interested in using body shape data (or also AMASS/MoVi original data) follow the instruction in [AMASS Github page](https://github.com/nghorbani/amass)
+In case you are interested in using body shape data (or also AMASS/MoVi original data) follow the instructions on [AMASS Github page](https://github.com/nghorbani/amass)
 
 ## Tutorials
 We release tools for MATLAB and Python ...
