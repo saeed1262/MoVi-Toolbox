@@ -21,9 +21,8 @@ Here we provide tools and tutorials to use MoVi in your research projects. More 
 In case you are interested in using body shape data (or also AMASS/MoVi original data) follow the instructions on [AMASS Github page](https://github.com/nghorbani/amass)
 
 ## Tutorials
-We release tools for MATLAB and Python ...
-
-Please refer to [tutorials](/notebooks) for further details.
+We have provided very brief tutorials on how to use the dataset in [MoCap](/MoCap).
+Also the tutorial on how to have access to the dataset is given [here](https://www.biomotionlab.ca/Data/Tutorials/DataverseTutorialBMLmovi.pdf)
 
 ## Citation
 Please cite the following paper if you use this code directly or indirectly in your research/projects:
@@ -38,7 +37,7 @@ Please cite the following paper if you use this code directly or indirectly in y
 }
 ```
 ## License
-Software Copyright License for non-commercial scientific research purposes. Please read carefully the terms and conditions stated in our [website](https://www.biomotionlab.ca/movi/) and any accompanying documentation before you download and/or use the MoVi dataset. Also, if you are using the part of dataset postprocessed as part of [AMASS](https://amass.is.tue.mpg.de/en) please follow all their [terms and conditions](https://amass.is.tue.mpg.de/license) as well. By downloading and/or using the code (including downloading, cloning, installing, and any other use of this GitHub repository), you acknowledge that you have read these terms and conditions, understand them, and agree to be bound by them. If you do not agree with these terms and conditions, you must not download and/or use the Model & Software. Any infringement of the terms of this agreement will automatically terminate your rights under this License.
+Software Copyright License for non-commercial scientific research purposes. Before you download and/or use the Motion and Video (MoVi) dataset, please carefully read the terms and conditions stated on our [website](https://www.biomotionlab.ca/movi/) and in any accompanying documentation. If you are using the part of the dataset that was post-processed as part of [AMASS](https://amass.is.tue.mpg.de/en), you must follow all their [terms and conditions](https://amass.is.tue.mpg.de/license) as well. By downloading and/or using the data or the code (including downloading, cloning, installing, and any other use of this GitHub repository), you acknowledge that you have read these terms and conditions, understand them, and agree to be bound by them. If you do not agree with these terms and conditions, you must not download and/or use the MoVi dataset and any associated code and software. Any infringement of the terms of this agreement will automatically terminate your rights under this License.
  
  ## Contact
 The code in this repository is developed by [Saeed Ghorbani](https://www.biomotionlab.ca/saeed-ghorbani/).
