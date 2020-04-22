@@ -1,4 +1,4 @@
-function play3DMotion(vals, parents, frameLength, saveVideo)
+function play3DMotion(vals, parents, frameLength, saveVideo, saveVideoName)
 %PLAY3DMOTION - Plays the motion which is presented in the 3D format
 %
 % Syntax: play3DMotion(vals, parents, frameLength, saveVideo)
@@ -7,7 +7,8 @@ function play3DMotion(vals, parents, frameLength, saveVideo)
 %    vals - 3D joints location
 %    parents - parents connections vector
 %    frameLength - length of each frame
-%   saveVideo - whether to save the video
+%    saveVideo - whether to save the video
+%    saveVideoName - the name of the video file to be saved
 % Example: 
 %    amass --> play3DMotion(Subject_1_F_amass.move{1, 1}.jointsLocation_amass, Subject_1_F_amass.move{1, 1}.jointsParent )
 %    v3d --> play3DMotion(Subject_1_F.move{1, 1}.virtualMarkerLocation  , Subject_1_F.move{1, 1}.virtualMarkerParent )
@@ -46,8 +47,12 @@ function play3DMotion(vals, parents, frameLength, saveVideo)
 if nargin < 3
     frameLength = 1/120;
     saveVideo = false;
+    saveVideoName = 'generated.avi';
 elseif nargin < 4
     saveVideo = false;
+    saveVideoName = 'generated.avi';
+elseif nargin < 5
+    saveVideoName = 'generated.avi';
 end
 
 % Checking both MHIP and Pelvic are using. If so removing MHIP
@@ -62,7 +67,8 @@ parents(2,:) = 1:length(parents);
 parents(:, parents(1,:)==0)=[];
 
 for i = 1:size(parents,2)
-    handle(i+1) = line([vals(1, parents(1,i), 1) vals(1, parents(2,i), 1)], ...
+    handle(i+1) = line(...
+        [vals(1, parents(1,i), 1) vals(1, parents(2,i), 1)], ...
         [vals(1, parents(1,i), 2) vals(1, parents(2,i), 2)], ...
         [vals(1, parents(1,i), 3) vals(1, parents(2,i), 3)]);
 end
@@ -95,7 +101,7 @@ set(handle(2:end),'LineWidth',3);
 
 % Saving it as a video in avi format
 if saveVideo
-    writerObj = VideoWriter('generated.avi');
+    writerObj = VideoWriter(saveVideoName);
     writerObj.FrameRate = 120.0;
     open(writerObj);
 end
@@ -116,9 +122,10 @@ for frame_num = 1:size(vals, 1)
     
     for i = 1:size(parents,2)
         if any(vals(frame_num, parents(1,i), :)) && any(vals(frame_num, parents(2,i), :)) 
-             set(handle(i+1), 'Xdata', [vals(frame_num, parents(1,i), 1) vals(frame_num, parents(2,i), 1)], ...
-            'Ydata', [vals(frame_num, parents(1,i), 2) vals(frame_num, parents(2,i), 2)], ...
-            'Zdata', [vals(frame_num, parents(1,i), 3) vals(frame_num, parents(2,i), 3)]);
+             set(handle(i+1), ...
+                 'Xdata', [vals(frame_num, parents(1,i), 1) vals(frame_num, parents(2,i), 1)], ...
+                 'Ydata', [vals(frame_num, parents(1,i), 2) vals(frame_num, parents(2,i), 2)], ...
+                 'Zdata', [vals(frame_num, parents(1,i), 3) vals(frame_num, parents(2,i), 3)]);
         else
              set(handle(i+1), 'Xdata', [], ...
             'Ydata', [], ...
