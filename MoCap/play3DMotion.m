@@ -126,7 +126,7 @@ for frame_num = 1:size(vals, 1)
         end
     end
     hold off
-    if save_video
+    if saveVideo
         writeVideo(writerObj, getframe(gcf));
     end
     pause(frameLength);
