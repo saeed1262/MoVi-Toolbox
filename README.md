@@ -21,7 +21,9 @@ Here we provide tools and tutorials to use MoVi in your research projects. More 
 In case you are interested in using body shape data (or also AMASS/MoVi original data) follow the instructions on [AMASS Github page](https://github.com/nghorbani/amass)
 
 ## Tutorials
-We have provided very brief tutorials on how to use the dataset in [MoCap](/MoCap). Some of the functions are only provided in MATLAB or Python so please take a look at both tutorial files `MATLAB.mlx` and `tutorial_python.ipynb`.
+- We have provided very brief tutorials on how to use the dataset in [MoCap](/MoCap). Some of the functions are only provided in MATLAB or Python so please take a look at both tutorial files `MATLAB.mlx` and `tutorial_python.ipynb`.
+- The video data are provided as a single file. In case you are intereseted in having synchronized video and AMASS (joint and body) files, you should trim F_PGx_Subject_x_L.avi file into single motion video files using function single_videos.m
+- The body mesh is not provided in AMASS files by default. Please use amass_fk function to augment AMASS data with the corresponding body mesh (vertices). (the detailes are explained in the `tutorial_python.ipynb`)
 Also the tutorial on how to have access to the dataset is given [here](https://www.biomotionlab.ca/Data/Tutorials/DataverseTutorialBMLmovi.pdf)
 
 ## Citation
