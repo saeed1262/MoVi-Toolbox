@@ -23,7 +23,7 @@ In case you are interested in using body shape data (or also AMASS/MoVi original
 ## Tutorials
 - We have provided very brief tutorials on how to use the dataset in [MoCap](/MoCap). Some of the functions are only provided in MATLAB or Python so please take a look at both tutorial files `MATLAB.mlx` and `tutorial_python.ipynb`.
 - The video data for each round are provided as a single sequence (and not individual motions). In case you are intereseted in having synchronized video and AMASS (joint and body) data, you should trim F_PGx_Subject_x_L.avi files into single motion video files using  `single_videos.m` function. 
-- The body mesh is not provided in AMASS files by default. Please use amass_fk function to augment AMASS data with the corresponding body mesh (vertices). (the detailes are explained in the `tutorial_python.ipynb`)
+- The body mesh is not provided in AMASS files by default. Please use `amass_fk` function to augment AMASS data with the corresponding body mesh (vertices). (the detailes are explained in the `tutorial_python.ipynb`)
 
 - The tutorial on how to have access to the dataset is given [here](https://www.biomotionlab.ca/Data/Tutorials/DataverseTutorialBMLmovi.pdf)
 
