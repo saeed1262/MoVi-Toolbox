@@ -9,7 +9,7 @@ Here we provide tools and tutorials to use MoVi in your research projects. More 
 ## Table of Contents
   * [Installation](#installation)
   * [Tutorials](#tutorials)
-  * [Important Notes](#important_notes)
+  * [Important Notes](#important-notes)
   * [Citation](#citation)
   * [License](#license)
   * [Contact](#contact)
