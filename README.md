@@ -9,6 +9,7 @@ Here we provide tools and tutorials to use MoVi in your research projects. More 
 ## Table of Contents
   * [Installation](#installation)
   * [Tutorials](#tutorials)
+  * [Important Notes](#important notes)
   * [Citation](#citation)
   * [License](#license)
   * [Contact](#contact)
@@ -22,11 +23,13 @@ In case you are interested in using body shape data (or also AMASS/MoVi original
 
 ## Tutorials
 - We have provided very brief tutorials on how to use the dataset in [MoCap](/MoCap). Some of the functions are only provided in MATLAB or Python so please take a look at both tutorial files `MATLAB.mlx` and `tutorial_python.ipynb`.
+
+- The tutorial on how to have access to the dataset is given [here](https://www.biomotionlab.ca/Data/Tutorials/DataverseTutorialBMLmovi.pdf)
+
+## Important Notes
 - The video data for each round are provided as a single sequence (and not individual motions). In case you are intereseted in having synchronized video and AMASS (joint and body) data, you should trim F_PGx_Subject_x_L.avi files into single motion video files using  `single_videos.m` function.
 - The timestamps (which separate motions) are provided by the name of “flags” in V3D files (only for f and s rounds). Please notice that “flags30” can be used for video data and “flags120” can be used for mocap data. The reason for having two types of flags is that video data were recorded in 30 fps and mocap data were recorded in 120 fps.
 - The body mesh is not provided in AMASS files by default. Please use `amass_fk` function to augment AMASS data with the corresponding body mesh (vertices). (the detailes are explained in the `tutorial_python.ipynb`)
-
-- The tutorial on how to have access to the dataset is given [here](https://www.biomotionlab.ca/Data/Tutorials/DataverseTutorialBMLmovi.pdf)
 
 ## Citation
 Please cite the following paper if you use this code directly or indirectly in your research/projects:
