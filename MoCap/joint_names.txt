@@ -1,3 +1,4 @@
+# Please notice that the hand joints are only in the average pose in our dataset
 {Pelvis, 0},
 {LeftHip, 1},
 {RightHip, 2},
