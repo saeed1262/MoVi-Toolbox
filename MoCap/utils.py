@@ -132,7 +132,7 @@ def amass_fk(npz_data_path, bm_path):
         comp_device = torch.device("cuda")
     else:
         comp_device = torch.device("cpu")
-    bm = BodyModel(bm_path=bm_path, model_type="smplh", batch_size=1, num_betas=10).to(
+    bm = BodyModel(bm_path=bm_path, batch_size=1, num_betas=10).to(
         comp_device
     )
     bdata = np.load(npz_data_path)
