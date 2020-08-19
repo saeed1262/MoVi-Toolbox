@@ -23,7 +23,7 @@ Here we provide tools and tutorials to use MoVi in your research projects. More 
 In case you are interested in using body shape data (or also AMASS/MoVi original data) follow the instructions on [AMASS Github page](https://github.com/nghorbani/amass).
 
 ## Tutorials
-- We have provided very brief tutorials on how to use the dataset in [MoCap](/MoCap). Some of the functions are only provided in **MATLAB** or **Python** so please take a look at both tutorial files [`tutorial_MATLAB.mlx`](MoCap/tutorial_MATLAB.mlx) and [`tutorial_python.ipynb`](MoCap/tutorial_python.ipynb).
+- We have provided very brief tutorials on how to use the dataset in [MoCap](/MoCap). Some of the functions are only provided in **MATLAB** or **Python** so please take a look at both tutorial files [`tutorial_MATLAB.m`](MoCap/tutorial_MATLAB.m) and [`tutorial_python.ipynb`](MoCap/tutorial_python.ipynb).
 
 - The tutorial on how to have access to the dataset is given [here](https://www.biomotionlab.ca/Data/Tutorials/DataverseTutorialBMLmovi.pdf).
 
