@@ -43,7 +43,8 @@ play3DMotion(amass_sample_motion, connections)
 % utils.py/npz2movi function on original npz files. npz file can be downloaded 
 % from AMASS website (<https://amass.is.tue.mpg.de/ https://amass.is.tue.mpg.de/>)
 
-video_name = "/home/saeedghorbani/Projects/Data/MoVi/Videos/F_PG1_Subject_1_L.avi"
+% To get the video files for single individual actions you should trim F_PGx_Subject_x_L.avi files into single motion video files using single_videos.m function
+video_name = "/home/saeedghorbani/Projects/Data/MoVi/V3D/F/F_Subject_1_L1.avi
 load('Subject_1_F_1_amass.mat')
 load('cameraParams_PG1.mat')
 load('Extrinsics_PG1.mat')
