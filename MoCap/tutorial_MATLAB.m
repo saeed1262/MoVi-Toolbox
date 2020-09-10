@@ -14,7 +14,7 @@ v3d_augmented = single_motions(v3d_sample)
 % This is the same for the videos. Only a single main video file is located 
 % in the dataset. Use the function below to crop the video file into single motions
 
-video_name = "/home/saeedghorbani/Projects/Data/MoVi/V3D/F/F_Subject_1_L.avi"
+video_name = "/home/saeedghorbani/Projects/Data/MoVi/V3D/F/F_PG1_Subject_1_L.avi"
 single_videos(video_name, v3d_sample)
 %% 
 % *Play motions motions by 3D joints*
@@ -26,14 +26,23 @@ v3d_sample_motion = v3d_augmented.move{2, 1}.virtualMarkerLocation;
 % structure
 load('connections.mat')
 play3DMotion(v3d_sample_motion, connections)
+
 %% 
-% Play an amass sample
+% Playing an amass sample
 
 amass_sample_motion = amass_sample.move{1, 1}.jointsLocation_amass;
 % Loading connections. Connections define the hierarchical skeleta
 % structure
 load('connections_amass.mat')
 play3DMotion(amass_sample_motion, connections)
+
+%%
+% Playing video overlaid with joints (V3D)
+video_name = "/home/saeedghorbani/Projects/Data/MoVi/V3D/F/F_PG1_Subject_1_L1.avi
+load('cameraParams_PG1.mat')
+load('Extrinsics_PG1.mat')
+display_overlay(v3d_sample_motion, video_name, cameraParams, rotationMatrix, translationVector, faces, verts)
+
 %% 
 % Playing video overlaid with joints and body mesh
 % 
@@ -42,9 +51,7 @@ play3DMotion(amass_sample_motion, connections)
 % By default, amass data does not include body mesh. To compute body mesh use 
 % utils.py/npz2movi function on original npz files. npz file can be downloaded 
 % from AMASS website (<https://amass.is.tue.mpg.de/ https://amass.is.tue.mpg.de/>)
-
-% To get the video files for single individual actions you should trim F_PGx_Subject_x_L.avi files into single motion video files using single_videos.m function
-video_name = "/home/saeedghorbani/Projects/Data/MoVi/V3D/F/F_Subject_1_L1.avi
+video_name = "/home/saeedghorbani/Projects/Data/MoVi/V3D/F/F_PG1_Subject_1_L1.avi
 load('Subject_1_F_1_amass.mat')
 load('cameraParams_PG1.mat')
 load('Extrinsics_PG1.mat')
