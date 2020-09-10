@@ -13,35 +13,41 @@ v3d_augmented = single_motions(v3d_sample)
 %% 
 % This is the same for the videos. Only a single main video file is located 
 % in the dataset. Use the function below to crop the video file into single motions
-
 video_name = "/home/saeedghorbani/Projects/Data/MoVi/V3D/F/F_PG1_Subject_1_L.avi"
 single_videos(video_name, v3d_sample)
-%% 
-% *Play motions motions by 3D joints*
-% 
-% Play a v3d sample
 
+%% 
+% Play the skeleta animation by 3D joints
+% 
+% Playing a v3d sample
+
+% Choosing a motion and its joint locations (joint locations in v3d files are noted by "virtualMarkerLocation")
 v3d_sample_motion = v3d_augmented.move{2, 1}.virtualMarkerLocation;
-% Loading connections. Connections define the hierarchical skeleta
-% structure
+
+% Loading connections. Connections define the hierarchical skeletal connections
 load('connections.mat')
+
+% Playing the animation
 play3DMotion(v3d_sample_motion, connections)
 
 %% 
 % Playing an amass sample
 
+% Choosing a motion and its joint locations (joint locations in v3d files are noted by "jointsLocation_amass")
 amass_sample_motion = amass_sample.move{1, 1}.jointsLocation_amass;
-% Loading connections. Connections define the hierarchical skeleta
-% structure
+
+% Loading connections. Connections define the hierarchical skeletal connections
 load('connections_amass.mat')
 play3DMotion(amass_sample_motion, connections)
 
 %%
 % Playing video overlaid with joints (V3D)
 video_name = "/home/saeedghorbani/Projects/Data/MoVi/V3D/F/F_PG1_Subject_1_L1.avi
+
+% Loading camera parameteres. It sould be "PG2" if you are going to play PG2 camera videos
 load('cameraParams_PG1.mat')
 load('Extrinsics_PG1.mat')
-display_overlay(v3d_sample_motion, video_name, cameraParams, rotationMatrix, translationVector, faces, verts)
+display_overlay(v3d_sample_motion, video_name, cameraParams, rotationMatrix, translationVector)
 
 %% 
 % Playing video overlaid with joints and body mesh
