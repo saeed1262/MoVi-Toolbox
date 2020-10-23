@@ -1,10 +1,10 @@
 # MoVi-Toolbox
 Data Preparation, Processing, and Visualization for MoVi Data, https://www.biomotionlab.ca/movi/
 
-<div style="text-align:center">
+<div style="align:center">
   <img src="demo.gif" align="middle">
 </div>
-<span style="display:block;text-align:center"> <img src="demo.gif" align="middle"></span>
+
 [MoVi](https://www.biomotionlab.ca/movi/) is a large multipurpose dataset of human motion and video.
 
 Here we provide tools and tutorials to use MoVi in your research projects. More specifically:
