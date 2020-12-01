@@ -42,7 +42,7 @@ play3DMotion(amass_sample_motion, connections)
 
 %%
 % Playing video overlaid with joints (V3D)
-video_name = "/home/saeedghorbani/Projects/Data/MoVi/V3D/F/F_PG1_Subject_1_L1.avi
+video_name = "/home/saeedghorbani/Projects/Data/MoVi/V3D/F/F_PG1_Subject_1_L1.avi"
 
 % Loading camera parameteres. It sould be "PG2" if you are going to play PG2 camera videos
 load('cameraParams_PG1.mat')
@@ -57,7 +57,7 @@ display_overlay(v3d_sample_motion, video_name, cameraParams, rotationMatrix, tra
 % By default, amass data does not include body mesh. To compute body mesh use 
 % utils.py/npz2movi function on original npz files. npz file can be downloaded 
 % from AMASS website (<https://amass.is.tue.mpg.de/ https://amass.is.tue.mpg.de/>)
-video_name = "/home/saeedghorbani/Projects/Data/MoVi/V3D/F/F_PG1_Subject_1_L1.avi
+video_name = "/home/saeedghorbani/Projects/Data/MoVi/V3D/F/F_PG1_Subject_1_L1.avi"
 load('Subject_1_F_1_amass.mat')
 load('cameraParams_PG1.mat')
 load('Extrinsics_PG1.mat')
