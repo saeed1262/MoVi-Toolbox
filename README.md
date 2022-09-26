@@ -53,3 +53,5 @@ Software Copyright License for non-commercial scientific research purposes. Befo
 The code in this repository is developed by [Saeed Ghorbani](https://www.biomotionlab.ca/saeed-ghorbani/).
 
 If you have any questions you can contact us at [saeed62@yorku.ca](mailto:saeed62@yorku.ca).
+
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=saeed1262.MoVi-Toolbox)
