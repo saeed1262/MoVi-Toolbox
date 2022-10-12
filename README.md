@@ -54,4 +54,4 @@ Software Copyright License for non-commercial scientific research purposes. Befo
  ## Contact
 The code in this repository is developed by [Saeed Ghorbani](https://saeed1262.github.io/).
 
-If you have any questions you can contact us at [Saeed Ghorbani](mailto:saaeed.ghorbani1262 at gmail dot com).
+If you have any questions you can contact us at [Saeed Ghorbani](mailto:saaeed.ghorbani1262@gmail.com).
