@@ -1,10 +1,9 @@
 # MoVi: A large multi-purpose human motion and video dataset
 
-Data Preparation, Processing, and Visualization for MoVi Data, https://www.biomotionlab.ca/movi/
-
 <div style="align:center">
   <img src="demo.gif" align="middle">
 </div>
+
 
 [MoVi](https://www.biomotionlab.ca/movi/) is a large multipurpose dataset of human motion and video.
 
